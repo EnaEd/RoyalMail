@@ -4117,6 +4117,9 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f040039
 			public const int support_simple_spinner_dropdown_item = 2130968633;
 			
+			// aapt resource value: 0x7f04003a
+			public const int TaskListView = 2130968634;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

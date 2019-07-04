@@ -6,7 +6,7 @@ using MvvmCross.Platforms.Android.Views;
 namespace RoyalMail.Android
 {
     [Activity(
-        Label = "$rootnamespace$"
+        Label = "RoyalMail.Android"
         , MainLauncher = true
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]
