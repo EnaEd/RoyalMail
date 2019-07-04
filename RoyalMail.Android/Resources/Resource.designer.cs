@@ -4124,7 +4124,10 @@ namespace RoyalMail.Android
 			public const int TaskDetailView = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int TaskListView = 2130968635;
+			public const int TaskItemTemplate = 2130968635;
+			
+			// aapt resource value: 0x7f04003c
+			public const int TaskListView = 2130968636;
 			
 			static Layout()
 			{
