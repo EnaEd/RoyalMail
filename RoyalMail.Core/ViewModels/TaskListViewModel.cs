@@ -63,15 +63,11 @@ namespace RoyalMail.Core.ViewModels
         }
 
 
-        private MvxCommand _createTaskCommand;
-        public ICommand CreateTaskCommand
-        {
-            get
-            {
-                _createTaskCommand = _createTaskCommand ?? new MvxCommand(CreateTask);
-                return _createTaskCommand;
-            }
-        }
+        public ICommand EditTaskCommand => new MvxCommand<Task>(EditTask);
+
+        
+
+        public ICommand CreateTaskCommand => new MvxCommand(CreateTask);
 
         private void InitData()
         {
@@ -84,6 +80,10 @@ namespace RoyalMail.Core.ViewModels
         private void CreateTask()
         {
             _navigationService.Navigate<TaskDetailViewModel,Task>(null);
+        }
+        private void EditTask(Task obj)
+        {
+            _navigationService.Navigate<TaskDetailViewModel, Task>(obj);
         }
     }
 }
