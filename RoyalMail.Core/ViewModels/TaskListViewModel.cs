@@ -8,19 +8,21 @@ namespace RoyalMail.Core.ViewModels
     public class TaskListViewModel : MvxViewModel
     {
         private string _helloString;
+        
+        public TaskListViewModel()
+        {
+            HelloString = "Hello MvvmCross";
+        }
+
         public string HelloString
         {
-            get =>_helloString;
+            get => _helloString;
 
             set
             {
                 _helloString = value;
                 RaisePropertyChanged(nameof(HelloString));
             }
-        }
-        public TaskListViewModel()
-        {
-            HelloString = "Hello MvvmCross";
         }
     }
 }
