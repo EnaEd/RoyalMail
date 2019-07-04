@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RoyalMail.Core.ViewModel
+namespace RoyalMail.Core.ViewModels
 {
     public class TaskListViewModel : MvxViewModel
     {

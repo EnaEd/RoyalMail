@@ -1,6 +1,6 @@
 ﻿using MvvmCross.IoC;
 using MvvmCross.ViewModels;
-using RoyalMail.Core.ViewModel;
+using RoyalMail.Core.ViewModels;
 
 namespace RoyalMail.Core
 {
