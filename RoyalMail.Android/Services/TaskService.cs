@@ -46,6 +46,7 @@ namespace RoyalMail.Android.Services
             if (item.Id != default(int))
             {
                 _connection.Update(item);
+                return;
             }
             _connection.Insert(item);
         }

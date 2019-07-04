@@ -14,6 +14,7 @@ namespace RoyalMail.Core.ViewModels
         private const int DEFAULT_LENGTH_TASK_NAME = 10;
         private string _taskDetail;
         private bool _isComplete;
+        private int _idTask;
         private ITaskRepository _taskService;
         public TaskDetailViewModel()
         {
@@ -33,7 +34,7 @@ namespace RoyalMail.Core.ViewModels
                 name = $"{TaskDetail.Substring(default(int), DEFAULT_LENGTH_TASK_NAME)}...";
                 return name;
             }
-            
+
         }
         public string TaskDetail
         {
@@ -67,6 +68,7 @@ namespace RoyalMail.Core.ViewModels
             }
             Task task = new Task
             {
+                Id = _idTask,
                 IsComlete = this.IsComplete,
                 TaskDetail = this.TaskDetail,
                 TaskName = this.TaskName
@@ -84,6 +86,7 @@ namespace RoyalMail.Core.ViewModels
 
             TaskDetail = parameter.TaskDetail;
             IsComplete = parameter.IsComlete;
+            _idTask = parameter.Id;
         }
     }
 }

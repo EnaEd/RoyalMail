@@ -18,13 +18,13 @@ namespace RoyalMail.Core.ViewModels
         private bool _isComplite;
         private ITaskRepository _taskService;
         private List<Task> _tasks;
-        public TaskListViewModel():base()
+        public TaskListViewModel() : base()
         {
             _taskService = Mvx.IoCProvider.Resolve<ITaskRepository>();
             InitData();
         }
 
-        
+
         public string TaskName
         {
             get => _taskName;
@@ -64,25 +64,22 @@ namespace RoyalMail.Core.ViewModels
 
         public ICommand ShoTaskDetailCommand => new MvxCommand<Task>(ShowtaskDetail);
 
-       
+
 
         public ICommand EditTaskCommand => new MvxCommand<Task>(EditTask);
 
-        
+
 
         public ICommand CreateTaskCommand => new MvxCommand(CreateTask);
 
         private void InitData()
         {
-            if (Tasks is null)
-            {
-                Tasks = _taskService.GetAll().Where(x => x.IsComlete == default(bool)).ToList();
-            }
+            Tasks = _taskService.GetAll().Where(x => x.IsComlete == default(bool)).ToList();
         }
 
         private void CreateTask()
         {
-            _navigationService.Navigate<TaskDetailViewModel,Task>(null);
+            _navigationService.Navigate<TaskDetailViewModel, Task>(null);
         }
         private void EditTask(Task obj)
         {
