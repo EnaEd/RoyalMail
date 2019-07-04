@@ -90,7 +90,7 @@ namespace RoyalMail.Core.ViewModels
         }
         private void ShowtaskDetail(Task obj)
         {
-            _messageService.ShowMessage($"{obj.TaskDetail}");
+            InvokeOnMainThread(() => { _messageService.ShowMessage($"{obj.TaskDetail}"); });
         }
     }
 }

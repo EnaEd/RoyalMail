@@ -9,8 +9,10 @@ namespace RoyalMail.Android.View
     [Activity(Label = "View for TaskListViewModel")]
     public class TaskListView : MvxActivity
     {
+        public static Activity Activity;
         protected override void OnCreate(Bundle bundle)
         {
+            Activity = this;
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.TaskListView);
         }
