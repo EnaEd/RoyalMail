@@ -62,6 +62,9 @@ namespace RoyalMail.Core.ViewModels
             }
         }
 
+        public ICommand ShoTaskDetailCommand => new MvxCommand<Task>(ShowtaskDetail);
+
+       
 
         public ICommand EditTaskCommand => new MvxCommand<Task>(EditTask);
 
@@ -84,6 +87,10 @@ namespace RoyalMail.Core.ViewModels
         private void EditTask(Task obj)
         {
             _navigationService.Navigate<TaskDetailViewModel, Task>(obj);
+        }
+        private void ShowtaskDetail(Task obj)
+        {
+            _messageService.ShowMessage($"{obj.TaskDetail}");
         }
     }
 }

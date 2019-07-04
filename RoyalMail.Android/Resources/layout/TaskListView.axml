@@ -16,6 +16,6 @@
 <MvvmCross.Platforms.Android.Binding.Views.MvxListView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    local:MvxBind="ItemsSource Tasks; ItemClick ; ItemLongClick EditTaskCommand"
+    local:MvxBind="ItemsSource Tasks; ItemClick ShoTaskDetailCommand; ItemLongClick EditTaskCommand"
     local:MvxItemTemplate="@layout/taskitemtemplate"/>
 </LinearLayout>

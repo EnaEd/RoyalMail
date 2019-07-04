@@ -13,6 +13,7 @@ namespace RoyalMail.Android
         protected override IMvxApplication CreateApp()
         {
             Mvx.IoCProvider.RegisterSingleton<ITaskRepository>(()=>new TaskService());
+            Mvx.IoCProvider.RegisterSingleton<IMessageService>(() => new MessageService());
             return new App();
         }
     }
