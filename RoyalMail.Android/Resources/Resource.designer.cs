@@ -3159,26 +3159,26 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020070
-			public const int avd_hide_password_1 = 2130837616;
-			
 			// aapt resource value: 0x7f020071
-			public const int avd_hide_password_2 = 2130837617;
+			public const int avd_hide_password_1 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int avd_hide_password_3 = 2130837618;
+			public const int avd_hide_password_2 = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int avd_hide_password_3 = 2130837619;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f020073
-			public const int avd_show_password_1 = 2130837619;
-			
 			// aapt resource value: 0x7f020074
-			public const int avd_show_password_2 = 2130837620;
+			public const int avd_show_password_1 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int avd_show_password_3 = 2130837621;
+			public const int avd_show_password_2 = 2130837621;
+			
+			// aapt resource value: 0x7f020076
+			public const int avd_show_password_3 = 2130837622;
 			
 			// aapt resource value: 0x7f020056
 			public const int design_bottom_navigation_item_background = 2130837590;
@@ -3240,11 +3240,11 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f020069
 			public const int notification_icon_background = 2130837609;
 			
-			// aapt resource value: 0x7f02006e
-			public const int notification_template_icon_bg = 2130837614;
-			
 			// aapt resource value: 0x7f02006f
-			public const int notification_template_icon_low_bg = 2130837615;
+			public const int notification_template_icon_bg = 2130837615;
+			
+			// aapt resource value: 0x7f020070
+			public const int notification_template_icon_low_bg = 2130837616;
 			
 			// aapt resource value: 0x7f02006a
 			public const int notification_tile_bg = 2130837610;
@@ -3253,10 +3253,13 @@ namespace RoyalMail.Android
 			public const int notify_panel_notification_icon_bg = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int tooltip_frame_dark = 2130837612;
+			public const int royalMailIcon = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int tooltip_frame_light = 2130837613;
+			public const int tooltip_frame_dark = 2130837613;
+			
+			// aapt resource value: 0x7f02006e
+			public const int tooltip_frame_light = 2130837614;
 			
 			static Drawable()
 			{
