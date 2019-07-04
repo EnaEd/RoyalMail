@@ -1,6 +1,7 @@
 ﻿using System;
 using Android.App;
 using Android.Widget;
+using Plugin.CurrentActivity;
 using RoyalMail.Android.View;
 using RoyalMail.Core.Interfaces;
 
@@ -15,7 +16,7 @@ namespace RoyalMail.Android.Services
 
         public void ShowMessage(string message)
         {
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(TaskListView.Activity);
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(CrossCurrentActivity.Current.Activity);
             alertDialog.SetTitle("Task Details");
             alertDialog.SetMessage($"{message}");
             alertDialog.SetPositiveButton("Ok", delegate

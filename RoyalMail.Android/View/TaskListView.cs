@@ -2,6 +2,7 @@
 using Android.OS;
 using MvvmCross.Platforms.Android.Presenters.Attributes;
 using MvvmCross.Platforms.Android.Views;
+using Plugin.CurrentActivity;
 
 namespace RoyalMail.Android.View
 {
@@ -9,11 +10,10 @@ namespace RoyalMail.Android.View
     [Activity(Label = "View for TaskListViewModel")]
     public class TaskListView : MvxActivity
     {
-        public static Activity Activity;
         protected override void OnCreate(Bundle bundle)
         {
-            Activity = this;
             base.OnCreate(bundle);
+            CrossCurrentActivity.Current.Init(this, bundle);
             SetContentView(Resource.Layout.TaskListView);
         }
     }
