@@ -44,6 +44,44 @@ namespace RoyalMail.Android
 			global::MvvmCross.Resource.Styleable.MvxListView = global::RoyalMail.Android.Resource.Styleable.MvxListView;
 			global::MvvmCross.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::RoyalMail.Android.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Resource.Styleable.MvxListView_MvxItemTemplate = global::RoyalMail.Android.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::Refractored.Fab.Resource.Attribute.fab_colorDisabled = global::RoyalMail.Android.Resource.Attribute.fab_colorDisabled;
+			global::Refractored.Fab.Resource.Attribute.fab_colorNormal = global::RoyalMail.Android.Resource.Attribute.fab_colorNormal;
+			global::Refractored.Fab.Resource.Attribute.fab_colorPressed = global::RoyalMail.Android.Resource.Attribute.fab_colorPressed;
+			global::Refractored.Fab.Resource.Attribute.fab_colorRipple = global::RoyalMail.Android.Resource.Attribute.fab_colorRipple;
+			global::Refractored.Fab.Resource.Attribute.fab_shadow = global::RoyalMail.Android.Resource.Attribute.fab_shadow;
+			global::Refractored.Fab.Resource.Attribute.fab_size = global::RoyalMail.Android.Resource.Attribute.fab_size;
+			global::Refractored.Fab.Resource.Attribute.layoutManager = global::RoyalMail.Android.Resource.Attribute.layoutManager;
+			global::Refractored.Fab.Resource.Attribute.reverseLayout = global::RoyalMail.Android.Resource.Attribute.reverseLayout;
+			global::Refractored.Fab.Resource.Attribute.spanCount = global::RoyalMail.Android.Resource.Attribute.spanCount;
+			global::Refractored.Fab.Resource.Attribute.stackFromEnd = global::RoyalMail.Android.Resource.Attribute.stackFromEnd;
+			global::Refractored.Fab.Resource.Color.fab_material_blue_500 = global::RoyalMail.Android.Resource.Color.fab_material_blue_500;
+			global::Refractored.Fab.Resource.Dimension.fab_elevation_lollipop = global::RoyalMail.Android.Resource.Dimension.fab_elevation_lollipop;
+			global::Refractored.Fab.Resource.Dimension.fab_scroll_threshold = global::RoyalMail.Android.Resource.Dimension.fab_scroll_threshold;
+			global::Refractored.Fab.Resource.Dimension.fab_shadow_size = global::RoyalMail.Android.Resource.Dimension.fab_shadow_size;
+			global::Refractored.Fab.Resource.Dimension.fab_size_mini = global::RoyalMail.Android.Resource.Dimension.fab_size_mini;
+			global::Refractored.Fab.Resource.Dimension.fab_size_normal = global::RoyalMail.Android.Resource.Dimension.fab_size_normal;
+			global::Refractored.Fab.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::RoyalMail.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Refractored.Fab.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::RoyalMail.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Refractored.Fab.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::RoyalMail.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Refractored.Fab.Resource.Drawable.fab_shadow = global::RoyalMail.Android.Resource.Drawable.fab_shadow;
+			global::Refractored.Fab.Resource.Drawable.fab_shadow_mini = global::RoyalMail.Android.Resource.Drawable.fab_shadow_mini;
+			global::Refractored.Fab.Resource.Id.item_touch_helper_previous_elevation = global::RoyalMail.Android.Resource.Id.item_touch_helper_previous_elevation;
+			global::Refractored.Fab.Resource.Id.mini = global::RoyalMail.Android.Resource.Id.mini;
+			global::Refractored.Fab.Resource.Id.normal = global::RoyalMail.Android.Resource.Id.normal;
+			global::Refractored.Fab.Resource.Styleable.FloatingActionButton = global::RoyalMail.Android.Resource.Styleable.FloatingActionButton;
+			global::Refractored.Fab.Resource.Styleable.FloatingActionButton_fab_colorDisabled = global::RoyalMail.Android.Resource.Styleable.FloatingActionButton_fab_colorDisabled;
+			global::Refractored.Fab.Resource.Styleable.FloatingActionButton_fab_colorNormal = global::RoyalMail.Android.Resource.Styleable.FloatingActionButton_fab_colorNormal;
+			global::Refractored.Fab.Resource.Styleable.FloatingActionButton_fab_colorPressed = global::RoyalMail.Android.Resource.Styleable.FloatingActionButton_fab_colorPressed;
+			global::Refractored.Fab.Resource.Styleable.FloatingActionButton_fab_colorRipple = global::RoyalMail.Android.Resource.Styleable.FloatingActionButton_fab_colorRipple;
+			global::Refractored.Fab.Resource.Styleable.FloatingActionButton_fab_shadow = global::RoyalMail.Android.Resource.Styleable.FloatingActionButton_fab_shadow;
+			global::Refractored.Fab.Resource.Styleable.FloatingActionButton_fab_size = global::RoyalMail.Android.Resource.Styleable.FloatingActionButton_fab_size;
+			global::Refractored.Fab.Resource.Styleable.RecyclerView = global::RoyalMail.Android.Resource.Styleable.RecyclerView;
+			global::Refractored.Fab.Resource.Styleable.RecyclerView_android_descendantFocusability = global::RoyalMail.Android.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Refractored.Fab.Resource.Styleable.RecyclerView_android_orientation = global::RoyalMail.Android.Resource.Styleable.RecyclerView_android_orientation;
+			global::Refractored.Fab.Resource.Styleable.RecyclerView_layoutManager = global::RoyalMail.Android.Resource.Styleable.RecyclerView_layoutManager;
+			global::Refractored.Fab.Resource.Styleable.RecyclerView_reverseLayout = global::RoyalMail.Android.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Refractored.Fab.Resource.Styleable.RecyclerView_spanCount = global::RoyalMail.Android.Resource.Styleable.RecyclerView_spanCount;
+			global::Refractored.Fab.Resource.Styleable.RecyclerView_stackFromEnd = global::RoyalMail.Android.Resource.Styleable.RecyclerView_stackFromEnd;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::RoyalMail.Android.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::RoyalMail.Android.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::RoyalMail.Android.Resource.Attribute.font;
@@ -335,23 +373,23 @@ namespace RoyalMail.Android
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f0101dd
-			public const int MvxBind = 2130772445;
+			// aapt resource value: 0x7f0101e3
+			public const int MvxBind = 2130772451;
 			
-			// aapt resource value: 0x7f0101e1
-			public const int MvxDropDownItemTemplate = 2130772449;
+			// aapt resource value: 0x7f0101e7
+			public const int MvxDropDownItemTemplate = 2130772455;
 			
-			// aapt resource value: 0x7f0101e2
-			public const int MvxGroupItemTemplate = 2130772450;
+			// aapt resource value: 0x7f0101e8
+			public const int MvxGroupItemTemplate = 2130772456;
 			
-			// aapt resource value: 0x7f0101e0
-			public const int MvxItemTemplate = 2130772448;
+			// aapt resource value: 0x7f0101e6
+			public const int MvxItemTemplate = 2130772454;
 			
-			// aapt resource value: 0x7f0101de
-			public const int MvxLang = 2130772446;
+			// aapt resource value: 0x7f0101e4
+			public const int MvxLang = 2130772452;
 			
-			// aapt resource value: 0x7f0101df
-			public const int MvxTemplate = 2130772447;
+			// aapt resource value: 0x7f0101e5
+			public const int MvxTemplate = 2130772453;
 			
 			// aapt resource value: 0x7f010062
 			public const int actionBarDivider = 2130772066;
@@ -955,6 +993,24 @@ namespace RoyalMail.Android
 			
 			// aapt resource value: 0x7f010177
 			public const int fabSize = 2130772343;
+			
+			// aapt resource value: 0x7f0101df
+			public const int fab_colorDisabled = 2130772447;
+			
+			// aapt resource value: 0x7f0101de
+			public const int fab_colorNormal = 2130772446;
+			
+			// aapt resource value: 0x7f0101dd
+			public const int fab_colorPressed = 2130772445;
+			
+			// aapt resource value: 0x7f0101e0
+			public const int fab_colorRipple = 2130772448;
+			
+			// aapt resource value: 0x7f0101e1
+			public const int fab_shadow = 2130772449;
+			
+			// aapt resource value: 0x7f0101e2
+			public const int fab_size = 2130772450;
 			
 			// aapt resource value: 0x7f010004
 			public const int fastScrollEnabled = 2130771972;
@@ -1822,44 +1878,44 @@ namespace RoyalMail.Android
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0c005d
-			public const int abc_background_cache_hint_selector_material_dark = 2131492957;
-			
 			// aapt resource value: 0x7f0c005e
-			public const int abc_background_cache_hint_selector_material_light = 2131492958;
+			public const int abc_background_cache_hint_selector_material_dark = 2131492958;
 			
 			// aapt resource value: 0x7f0c005f
-			public const int abc_btn_colored_borderless_text_material = 2131492959;
+			public const int abc_background_cache_hint_selector_material_light = 2131492959;
 			
 			// aapt resource value: 0x7f0c0060
-			public const int abc_btn_colored_text_material = 2131492960;
+			public const int abc_btn_colored_borderless_text_material = 2131492960;
 			
 			// aapt resource value: 0x7f0c0061
-			public const int abc_color_highlight_material = 2131492961;
+			public const int abc_btn_colored_text_material = 2131492961;
 			
 			// aapt resource value: 0x7f0c0062
-			public const int abc_hint_foreground_material_dark = 2131492962;
+			public const int abc_color_highlight_material = 2131492962;
 			
 			// aapt resource value: 0x7f0c0063
-			public const int abc_hint_foreground_material_light = 2131492963;
+			public const int abc_hint_foreground_material_dark = 2131492963;
+			
+			// aapt resource value: 0x7f0c0064
+			public const int abc_hint_foreground_material_light = 2131492964;
 			
 			// aapt resource value: 0x7f0c0004
 			public const int abc_input_method_navigation_guard = 2131492868;
 			
-			// aapt resource value: 0x7f0c0064
-			public const int abc_primary_text_disable_only_material_dark = 2131492964;
-			
 			// aapt resource value: 0x7f0c0065
-			public const int abc_primary_text_disable_only_material_light = 2131492965;
+			public const int abc_primary_text_disable_only_material_dark = 2131492965;
 			
 			// aapt resource value: 0x7f0c0066
-			public const int abc_primary_text_material_dark = 2131492966;
+			public const int abc_primary_text_disable_only_material_light = 2131492966;
 			
 			// aapt resource value: 0x7f0c0067
-			public const int abc_primary_text_material_light = 2131492967;
+			public const int abc_primary_text_material_dark = 2131492967;
 			
 			// aapt resource value: 0x7f0c0068
-			public const int abc_search_url_text = 2131492968;
+			public const int abc_primary_text_material_light = 2131492968;
+			
+			// aapt resource value: 0x7f0c0069
+			public const int abc_search_url_text = 2131492969;
 			
 			// aapt resource value: 0x7f0c0005
 			public const int abc_search_url_text_normal = 2131492869;
@@ -1870,29 +1926,29 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c0007
 			public const int abc_search_url_text_selected = 2131492871;
 			
-			// aapt resource value: 0x7f0c0069
-			public const int abc_secondary_text_material_dark = 2131492969;
-			
 			// aapt resource value: 0x7f0c006a
-			public const int abc_secondary_text_material_light = 2131492970;
+			public const int abc_secondary_text_material_dark = 2131492970;
 			
 			// aapt resource value: 0x7f0c006b
-			public const int abc_tint_btn_checkable = 2131492971;
+			public const int abc_secondary_text_material_light = 2131492971;
 			
 			// aapt resource value: 0x7f0c006c
-			public const int abc_tint_default = 2131492972;
+			public const int abc_tint_btn_checkable = 2131492972;
 			
 			// aapt resource value: 0x7f0c006d
-			public const int abc_tint_edittext = 2131492973;
+			public const int abc_tint_default = 2131492973;
 			
 			// aapt resource value: 0x7f0c006e
-			public const int abc_tint_seek_thumb = 2131492974;
+			public const int abc_tint_edittext = 2131492974;
 			
 			// aapt resource value: 0x7f0c006f
-			public const int abc_tint_spinner = 2131492975;
+			public const int abc_tint_seek_thumb = 2131492975;
 			
 			// aapt resource value: 0x7f0c0070
-			public const int abc_tint_switch_track = 2131492976;
+			public const int abc_tint_spinner = 2131492976;
+			
+			// aapt resource value: 0x7f0c0071
+			public const int abc_tint_switch_track = 2131492977;
 			
 			// aapt resource value: 0x7f0c0008
 			public const int accent_material_dark = 2131492872;
@@ -1960,14 +2016,14 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c0003
 			public const int cardview_shadow_start_color = 2131492867;
 			
-			// aapt resource value: 0x7f0c005b
-			public const int colorAccent = 2131492955;
-			
-			// aapt resource value: 0x7f0c0059
-			public const int colorPrimary = 2131492953;
+			// aapt resource value: 0x7f0c005c
+			public const int colorAccent = 2131492956;
 			
 			// aapt resource value: 0x7f0c005a
-			public const int colorPrimaryDark = 2131492954;
+			public const int colorPrimary = 2131492954;
+			
+			// aapt resource value: 0x7f0c005b
+			public const int colorPrimaryDark = 2131492955;
 			
 			// aapt resource value: 0x7f0c0040
 			public const int design_bottom_navigation_shadow_color = 2131492928;
@@ -1978,8 +2034,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c0042
 			public const int design_default_color_primary_dark = 2131492930;
 			
-			// aapt resource value: 0x7f0c0071
-			public const int design_error = 2131492977;
+			// aapt resource value: 0x7f0c0072
+			public const int design_error = 2131492978;
 			
 			// aapt resource value: 0x7f0c0043
 			public const int design_fab_shadow_end_color = 2131492931;
@@ -2005,8 +2061,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c004a
 			public const int design_snackbar_background_color = 2131492938;
 			
-			// aapt resource value: 0x7f0c0072
-			public const int design_tint_password_toggle = 2131492978;
+			// aapt resource value: 0x7f0c0073
+			public const int design_tint_password_toggle = 2131492979;
 			
 			// aapt resource value: 0x7f0c0016
 			public const int dim_foreground_disabled_material_dark = 2131492886;
@@ -2026,6 +2082,9 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c001b
 			public const int error_color_material_light = 2131492891;
 			
+			// aapt resource value: 0x7f0c0059
+			public const int fab_material_blue_500 = 2131492953;
+			
 			// aapt resource value: 0x7f0c001c
 			public const int foreground_material_dark = 2131492892;
 			
@@ -2038,8 +2097,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c001f
 			public const int highlighted_text_material_light = 2131492895;
 			
-			// aapt resource value: 0x7f0c005c
-			public const int ic_launcher_background = 2131492956;
+			// aapt resource value: 0x7f0c005d
+			public const int ic_launcher_background = 2131492957;
 			
 			// aapt resource value: 0x7f0c0020
 			public const int material_blue_grey_800 = 2131492896;
@@ -2077,71 +2136,71 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c002b
 			public const int material_grey_900 = 2131492907;
 			
-			// aapt resource value: 0x7f0c0073
-			public const int mtrl_bottom_nav_colored_item_tint = 2131492979;
-			
 			// aapt resource value: 0x7f0c0074
-			public const int mtrl_bottom_nav_item_tint = 2131492980;
+			public const int mtrl_bottom_nav_colored_item_tint = 2131492980;
+			
+			// aapt resource value: 0x7f0c0075
+			public const int mtrl_bottom_nav_item_tint = 2131492981;
 			
 			// aapt resource value: 0x7f0c004b
 			public const int mtrl_btn_bg_color_disabled = 2131492939;
 			
-			// aapt resource value: 0x7f0c0075
-			public const int mtrl_btn_bg_color_selector = 2131492981;
-			
 			// aapt resource value: 0x7f0c0076
-			public const int mtrl_btn_ripple_color = 2131492982;
+			public const int mtrl_btn_bg_color_selector = 2131492982;
 			
 			// aapt resource value: 0x7f0c0077
-			public const int mtrl_btn_stroke_color_selector = 2131492983;
+			public const int mtrl_btn_ripple_color = 2131492983;
 			
 			// aapt resource value: 0x7f0c0078
-			public const int mtrl_btn_text_btn_ripple_color = 2131492984;
+			public const int mtrl_btn_stroke_color_selector = 2131492984;
+			
+			// aapt resource value: 0x7f0c0079
+			public const int mtrl_btn_text_btn_ripple_color = 2131492985;
 			
 			// aapt resource value: 0x7f0c004c
 			public const int mtrl_btn_text_color_disabled = 2131492940;
 			
-			// aapt resource value: 0x7f0c0079
-			public const int mtrl_btn_text_color_selector = 2131492985;
+			// aapt resource value: 0x7f0c007a
+			public const int mtrl_btn_text_color_selector = 2131492986;
 			
 			// aapt resource value: 0x7f0c004d
 			public const int mtrl_btn_transparent_bg_color = 2131492941;
 			
-			// aapt resource value: 0x7f0c007a
-			public const int mtrl_chip_background_color = 2131492986;
-			
 			// aapt resource value: 0x7f0c007b
-			public const int mtrl_chip_close_icon_tint = 2131492987;
+			public const int mtrl_chip_background_color = 2131492987;
 			
 			// aapt resource value: 0x7f0c007c
-			public const int mtrl_chip_ripple_color = 2131492988;
+			public const int mtrl_chip_close_icon_tint = 2131492988;
 			
 			// aapt resource value: 0x7f0c007d
-			public const int mtrl_chip_text_color = 2131492989;
+			public const int mtrl_chip_ripple_color = 2131492989;
 			
 			// aapt resource value: 0x7f0c007e
-			public const int mtrl_fab_ripple_color = 2131492990;
+			public const int mtrl_chip_text_color = 2131492990;
+			
+			// aapt resource value: 0x7f0c007f
+			public const int mtrl_fab_ripple_color = 2131492991;
 			
 			// aapt resource value: 0x7f0c004e
 			public const int mtrl_scrim_color = 2131492942;
 			
-			// aapt resource value: 0x7f0c007f
-			public const int mtrl_tabs_colored_ripple_color = 2131492991;
-			
 			// aapt resource value: 0x7f0c0080
-			public const int mtrl_tabs_icon_color_selector = 2131492992;
+			public const int mtrl_tabs_colored_ripple_color = 2131492992;
 			
 			// aapt resource value: 0x7f0c0081
-			public const int mtrl_tabs_icon_color_selector_colored = 2131492993;
+			public const int mtrl_tabs_icon_color_selector = 2131492993;
 			
 			// aapt resource value: 0x7f0c0082
-			public const int mtrl_tabs_legacy_text_color_selector = 2131492994;
+			public const int mtrl_tabs_icon_color_selector_colored = 2131492994;
 			
 			// aapt resource value: 0x7f0c0083
-			public const int mtrl_tabs_ripple_color = 2131492995;
+			public const int mtrl_tabs_legacy_text_color_selector = 2131492995;
 			
 			// aapt resource value: 0x7f0c0084
-			public const int mtrl_text_btn_text_color_selector = 2131492996;
+			public const int mtrl_tabs_ripple_color = 2131492996;
+			
+			// aapt resource value: 0x7f0c0085
+			public const int mtrl_text_btn_text_color_selector = 2131492997;
 			
 			// aapt resource value: 0x7f0c004f
 			public const int mtrl_textinput_default_box_stroke_color = 2131492943;
@@ -2209,11 +2268,11 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0c003b
 			public const int switch_thumb_disabled_material_light = 2131492923;
 			
-			// aapt resource value: 0x7f0c0085
-			public const int switch_thumb_material_dark = 2131492997;
-			
 			// aapt resource value: 0x7f0c0086
-			public const int switch_thumb_material_light = 2131492998;
+			public const int switch_thumb_material_dark = 2131492998;
+			
+			// aapt resource value: 0x7f0c0087
+			public const int switch_thumb_material_light = 2131492999;
 			
 			// aapt resource value: 0x7f0c003c
 			public const int switch_thumb_normal_material_dark = 2131492924;
@@ -2638,6 +2697,21 @@ namespace RoyalMail.Android
 			
 			// aapt resource value: 0x7f090055
 			public const int disabled_alpha_material_light = 2131296341;
+			
+			// aapt resource value: 0x7f0900dd
+			public const int fab_elevation_lollipop = 2131296477;
+			
+			// aapt resource value: 0x7f0900dc
+			public const int fab_scroll_threshold = 2131296476;
+			
+			// aapt resource value: 0x7f0900db
+			public const int fab_shadow_size = 2131296475;
+			
+			// aapt resource value: 0x7f0900da
+			public const int fab_size_mini = 2131296474;
+			
+			// aapt resource value: 0x7f0900d9
+			public const int fab_size_normal = 2131296473;
 			
 			// aapt resource value: 0x7f090000
 			public const int fastscroll_default_thickness = 2131296256;
@@ -3159,26 +3233,26 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020071
-			public const int avd_hide_password_1 = 2130837617;
-			
-			// aapt resource value: 0x7f020072
-			public const int avd_hide_password_2 = 2130837618;
-			
 			// aapt resource value: 0x7f020073
-			public const int avd_hide_password_3 = 2130837619;
+			public const int avd_hide_password_1 = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int avd_hide_password_2 = 2130837620;
+			
+			// aapt resource value: 0x7f020075
+			public const int avd_hide_password_3 = 2130837621;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f020074
-			public const int avd_show_password_1 = 2130837620;
-			
-			// aapt resource value: 0x7f020075
-			public const int avd_show_password_2 = 2130837621;
-			
 			// aapt resource value: 0x7f020076
-			public const int avd_show_password_3 = 2130837622;
+			public const int avd_show_password_1 = 2130837622;
+			
+			// aapt resource value: 0x7f020077
+			public const int avd_show_password_2 = 2130837623;
+			
+			// aapt resource value: 0x7f020078
+			public const int avd_show_password_3 = 2130837624;
 			
 			// aapt resource value: 0x7f020056
 			public const int design_bottom_navigation_item_background = 2130837590;
@@ -3199,67 +3273,73 @@ namespace RoyalMail.Android
 			public const int design_snackbar_background = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_mtrl_chip_checked_black = 2130837596;
+			public const int fab_shadow = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_mtrl_chip_checked_circle = 2130837597;
+			public const int fab_shadow_mini = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_mtrl_chip_close_circle = 2130837598;
+			public const int ic_mtrl_chip_checked_black = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int mtrl_snackbar_background = 2130837599;
+			public const int ic_mtrl_chip_checked_circle = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int mtrl_tabs_default_indicator = 2130837600;
+			public const int ic_mtrl_chip_close_circle = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int navigation_empty_icon = 2130837601;
+			public const int mtrl_snackbar_background = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_action_background = 2130837602;
+			public const int mtrl_tabs_default_indicator = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_bg = 2130837603;
+			public const int navigation_empty_icon = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int notification_bg_low = 2130837604;
+			public const int notification_action_background = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int notification_bg_low_normal = 2130837605;
+			public const int notification_bg = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int notification_bg_low_pressed = 2130837606;
+			public const int notification_bg_low = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int notification_bg_normal = 2130837607;
+			public const int notification_bg_low_normal = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int notification_bg_normal_pressed = 2130837608;
+			public const int notification_bg_low_pressed = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int notification_icon_background = 2130837609;
-			
-			// aapt resource value: 0x7f02006f
-			public const int notification_template_icon_bg = 2130837615;
-			
-			// aapt resource value: 0x7f020070
-			public const int notification_template_icon_low_bg = 2130837616;
+			public const int notification_bg_normal = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int notification_tile_bg = 2130837610;
+			public const int notification_bg_normal_pressed = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int notify_panel_notification_icon_bg = 2130837611;
+			public const int notification_icon_background = 2130837611;
+			
+			// aapt resource value: 0x7f020071
+			public const int notification_template_icon_bg = 2130837617;
+			
+			// aapt resource value: 0x7f020072
+			public const int notification_template_icon_low_bg = 2130837618;
 			
 			// aapt resource value: 0x7f02006c
-			public const int royalMailIcon = 2130837612;
+			public const int notification_tile_bg = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int tooltip_frame_dark = 2130837613;
+			public const int notify_panel_notification_icon_bg = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int tooltip_frame_light = 2130837614;
+			public const int royalMailIcon = 2130837614;
+			
+			// aapt resource value: 0x7f02006f
+			public const int tooltip_frame_dark = 2130837615;
+			
+			// aapt resource value: 0x7f020070
+			public const int tooltip_frame_light = 2130837616;
 			
 			static Drawable()
 			{
@@ -3487,6 +3567,9 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a0087
 			public const int expanded_menu = 2131361927;
 			
+			// aapt resource value: 0x7f0a00be
+			public const int fab = 2131361982;
+			
 			// aapt resource value: 0x7f0a0060
 			public const int fill = 2131361888;
 			
@@ -3559,8 +3642,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a0072
 			public const int list_item = 2131361906;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int masked = 2131361983;
+			// aapt resource value: 0x7f0a00c0
+			public const int masked = 2131361984;
 			
 			// aapt resource value: 0x7f0a009e
 			public const int message = 2131361950;
@@ -3841,8 +3924,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int visible = 2131361982;
+			// aapt resource value: 0x7f0a00bf
+			public const int visible = 2131361983;
 			
 			// aapt resource value: 0x7f0a0045
 			public const int withText = 2131361861;
@@ -7278,7 +7361,13 @@ namespace RoyalMail.Android
 					2130772346,
 					2130772347,
 					2130772348,
-					2130772349};
+					2130772349,
+					2130772445,
+					2130772446,
+					2130772447,
+					2130772448,
+					2130772449,
+					2130772450};
 			
 			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTint = 1;
@@ -7297,6 +7386,24 @@ namespace RoyalMail.Android
 			
 			// aapt resource value: 6
 			public const int FloatingActionButton_fabSize = 6;
+			
+			// aapt resource value: 15
+			public const int FloatingActionButton_fab_colorDisabled = 15;
+			
+			// aapt resource value: 14
+			public const int FloatingActionButton_fab_colorNormal = 14;
+			
+			// aapt resource value: 13
+			public const int FloatingActionButton_fab_colorPressed = 13;
+			
+			// aapt resource value: 16
+			public const int FloatingActionButton_fab_colorRipple = 16;
+			
+			// aapt resource value: 17
+			public const int FloatingActionButton_fab_shadow = 17;
+			
+			// aapt resource value: 18
+			public const int FloatingActionButton_fab_size = 18;
 			
 			// aapt resource value: 3
 			public const int FloatingActionButton_hideMotionSpec = 3;
@@ -7908,8 +8015,8 @@ namespace RoyalMail.Android
 			public const int MenuView_subMenuArrow = 8;
 			
 			public static int[] MvxBinding = new int[] {
-					2130772445,
-					2130772446};
+					2130772451,
+					2130772452};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -7918,20 +8025,20 @@ namespace RoyalMail.Android
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130772447};
+					2130772453};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[] {
-					2130772450};
+					2130772456};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130772448,
-					2130772449};
+					2130772454,
+					2130772455};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;

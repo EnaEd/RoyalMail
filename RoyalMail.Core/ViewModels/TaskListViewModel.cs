@@ -77,7 +77,7 @@ namespace RoyalMail.Core.ViewModels
             Tasks = _taskService.GetAll().Where(x => x.IsComlete == default(bool)).ToList();
         }
 
-        private void CreateTask()
+        public void CreateTask()
         {
             _navigationService.Navigate<TaskDetailViewModel, Task>(null);
         }
