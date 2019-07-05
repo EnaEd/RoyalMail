@@ -22,10 +22,10 @@
             android:textColor="@android:color/white"
             android:layout_gravity="center"/>
     </Toolbar>
-    <MvvmCross.Platforms.Android.Binding.Views.MvxListView
+    <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
         android:id="@id/list_item"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/_toolbarMain"
         local:MvxBind="ItemsSource Tasks; ItemClick ShoTaskDetailCommand; ItemLongClick EditTaskCommand"
         local:MvxItemTemplate="@layout/taskitemtemplate"/>
