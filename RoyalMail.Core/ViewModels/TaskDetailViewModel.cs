@@ -63,6 +63,12 @@ namespace RoyalMail.Core.ViewModels
         
         private MvxCommand _saveTaskCommand;
         public ICommand SaveTaskCommand => new MvxCommand(SaveTask);
+        public ICommand GoBackCommand => new MvxCommand(GoBack);
+
+        private void GoBack()
+        {
+            _navigationService.Close(this);
+        }
 
         private void SaveTask()
         {
