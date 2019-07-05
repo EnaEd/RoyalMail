@@ -96,6 +96,13 @@ namespace RoyalMail.Core.ViewModels
         {
             _navigationService.Navigate<TaskDetailViewModel, Task>(null);
         }
+
+        public void CompleteTask(Task task)
+        {
+            task.IsComlete = true;
+            _taskService.Save(task);
+            InitData();
+        }
         private void EditTask(Task obj)
         {
             _navigationService.Navigate<TaskDetailViewModel, Task>(obj);
