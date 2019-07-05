@@ -74,7 +74,7 @@ namespace RoyalMail.Core.ViewModels
         {
             if (string.IsNullOrEmpty(TaskDetail))
             {
-                _navigationService.Navigate<TaskListViewModel>();
+                _navigationService.Close(this);
                 return;
             }
             Task task = new Task
@@ -85,7 +85,7 @@ namespace RoyalMail.Core.ViewModels
                 TaskName = this.TaskName
             };
             _taskService.Save(task);
-            _navigationService.Navigate<TaskListViewModel>();
+            _navigationService.Close(this);
         }
 
         public override void Prepare(Task parameter)
