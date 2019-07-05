@@ -37,6 +37,17 @@ namespace RoyalMail.Core.ViewModels
                 RaisePropertyChanged(nameof(TaskName));
             }
         }
+
+        public string TaskDetailCard
+        {
+            get => _taskName;
+            set
+            {
+                _taskName = value;
+                RaisePropertyChanged(nameof(TaskName));
+            }
+        }
+
         public string TaskDetail
         {
             get => _taskDetail;
@@ -67,19 +78,20 @@ namespace RoyalMail.Core.ViewModels
 
         public ICommand ShoTaskDetailCommand => new MvxCommand<Task>(ShowtaskDetail);
 
-
-
         public ICommand EditTaskCommand => new MvxCommand<Task>(EditTask);
 
-
-
         public ICommand CreateTaskCommand => new MvxCommand(CreateTask);
+
+
+        public override void ViewAppearing()
+        {
+            InitData();
+        }
 
         private void InitData()
         {
             Tasks = _taskService.GetAll().Where(x => x.IsComlete == default(bool)).ToList();
         }
-
         public void CreateTask()
         {
             _navigationService.Navigate<TaskDetailViewModel, Task>(null);

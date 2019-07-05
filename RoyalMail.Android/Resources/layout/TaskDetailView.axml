@@ -49,6 +49,7 @@
             android:minLines="6" 
             android:lines="8"
             android:gravity="top|left"
+            android:maxLength="280"
             android:layout_below="@id/headerInputTask"
             android:layout_margin="5dp"
             local:MvxBind="Text TaskDetail"/>
