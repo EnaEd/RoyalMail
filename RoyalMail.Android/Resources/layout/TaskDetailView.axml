@@ -10,6 +10,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:visibility="invisible"
         local:MvxBind="Text TaskName"/>
 
     <CheckBox
@@ -46,8 +48,10 @@
             android:inputType="textMultiLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minLines="6" 
+            android:minLines="8" 
             android:lines="8"
+            android:maxLines="8"
+            android:maxHeight="100dp"
             android:gravity="top|left"
             android:maxLength="280"
             android:layout_below="@id/headerInputTask"
