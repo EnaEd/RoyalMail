@@ -6,26 +6,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
-       layout="@layout/toolbar"/>
+        layout="@layout/toolbar"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         local:MvxBind="Text TaskName"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your task here..."
-        local:MvxBind="Text TaskDetail"/>
+
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginRight="5dp"
         android:text="complete"
+        android:buttonTint="@color/colorAccent"
         local:MvxBind="Checked IsComplete"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5D3D6"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/headerInputTask">
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_action_bar_content_inset_material"
+                android:text="Enter your task "
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+        
+        <EditText
+            android:id="@+id/inputTask"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="8" 
+            android:minLines="6" 
+            android:gravity="top|left"
+            android:maxLines="10" 
+            android:layout_below="@id/headerInputTask"
+            android:layout_margin="5dp"
+            local:MvxBind="Text TaskDetail"/>
+        <Button
+            android:id="@+id/buttonSaveTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/inputTask"
+            local:MvxBind="Click SaveTaskCommand"/>
+    </RelativeLayout>
+</LinearLayout>
+<!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your task here..."
+        local:MvxBind="Text TaskDetail"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="save"
-        local:MvxBind="Click SaveTaskCommand"/>
-</LinearLayout>
+        local:MvxBind="Click SaveTaskCommand"/>-->
