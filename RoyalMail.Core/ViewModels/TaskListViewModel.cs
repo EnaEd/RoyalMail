@@ -12,7 +12,7 @@ namespace RoyalMail.Core.ViewModels
 {
     public class TaskListViewModel : BaseViewModel
     {
-
+        private const string TITLE = "Task Detail";
         private string _taskName;
         private string _taskDetail;
         private bool _isComplite;
@@ -24,7 +24,10 @@ namespace RoyalMail.Core.ViewModels
             InitData();
         }
 
-
+        public string Title
+        {
+            get => TITLE;
+        }
         public string TaskName
         {
             get => _taskName;

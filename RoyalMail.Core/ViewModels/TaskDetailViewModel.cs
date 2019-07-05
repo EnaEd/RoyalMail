@@ -12,6 +12,7 @@ namespace RoyalMail.Core.ViewModels
     public class TaskDetailViewModel : BaseTViewModel<Task>
     {
         private const int DEFAULT_LENGTH_TASK_NAME = 10;
+        private const string TITLE = "Task Detail";
         private string _taskDetail;
         private bool _isComplete;
         private int _idTask;
@@ -21,6 +22,10 @@ namespace RoyalMail.Core.ViewModels
             _taskService = Mvx.IoCProvider.Resolve<ITaskRepository>();
         }
 
+        public string Title
+        {
+            get => TITLE;
+        }
         public string TaskName
         {
             get
@@ -55,7 +60,7 @@ namespace RoyalMail.Core.ViewModels
                 RaisePropertyChanged(nameof(IsComplete));
             }
         }
-
+        
         private MvxCommand _saveTaskCommand;
         public ICommand SaveTaskCommand => new MvxCommand(SaveTask);
 
