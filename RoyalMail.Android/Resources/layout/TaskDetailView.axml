@@ -60,6 +60,7 @@
             android:textColor="@android:color/white"
             android:layout_alignParentRight="true"
             android:layout_below="@id/inputTask"
+            android:background="@drawable/defaultbutton"
             local:MvxBind="Click SaveTaskCommand"/>
     </RelativeLayout>
 </LinearLayout>
