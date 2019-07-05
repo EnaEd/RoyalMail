@@ -38,6 +38,6 @@
         android:layout_margin="16dp"
         android:src="@android:drawable/ic_menu_add"
         local:fab_colorNormal="@color/colorPrimary"
-        local:fab_colorPressed="@color/colorPrimaryDark"/>
+        local:fab_colorPressed="@color/colorAccent"/>
 </RelativeLayout>
  
