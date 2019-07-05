@@ -3378,6 +3378,9 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a0040
 			public const int SYM = 2131361856;
 			
+			// aapt resource value: 0x7f0a00be
+			public const int _toolbarMain = 2131361982;
+			
 			// aapt resource value: 0x7f0a008f
 			public const int action_bar = 2131361935;
 			
@@ -3567,8 +3570,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a0087
 			public const int expanded_menu = 2131361927;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int fab = 2131361982;
+			// aapt resource value: 0x7f0a00bf
+			public const int fab = 2131361983;
 			
 			// aapt resource value: 0x7f0a0060
 			public const int fill = 2131361888;
@@ -3642,8 +3645,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a0072
 			public const int list_item = 2131361906;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int masked = 2131361984;
+			// aapt resource value: 0x7f0a00c1
+			public const int masked = 2131361985;
 			
 			// aapt resource value: 0x7f0a009e
 			public const int message = 2131361950;
@@ -3924,8 +3927,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int visible = 2131361983;
+			// aapt resource value: 0x7f0a00c0
+			public const int visible = 2131361984;
 			
 			// aapt resource value: 0x7f0a0045
 			public const int withText = 2131361861;
