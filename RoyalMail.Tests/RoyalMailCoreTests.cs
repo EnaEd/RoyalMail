@@ -1,101 +1,88 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
-using MvvmCross;
+using RoyalMail.Android.Repository;
 using RoyalMail.Android.Services;
 using RoyalMail.Core.Interfaces;
 using RoyalMail.Core.Models;
+using SQLite;
 
 namespace RoyalMail.Tests
 {
     [TestClass]
     public class RoyalMailCoreTests
     {
-        [TestMethod]
-        public void SaveTaskTest()
+        private SQLiteConnection _connection;
+        private ITaskRepository _repository;
+        private Task _testTask;
+        public RoyalMailCoreTests()
         {
-            //Arrange
+            _connection = new SQLiteConnection(":memory:");
+            _repository = new TaskRepository(new SQLiteConnectionService(_connection));
+
             string taskdetail = "new unit test task";
-            Task testTask = new Task
+            _testTask = new Task
             {
                 IsComlete = false,
                 TaskDetail = $"{taskdetail}4...",
                 TaskName = $"{taskdetail.Substring(0, 10)}..."
-
             };
-            var mock = new Mock<ITaskRepository>();
-            mock.Setup(x => x.Save(It.IsAny<Task>())) 
-            .Callback<Task>(x => { x.Id = 1; });
+        }
+        [TestMethod]
+        public void CreateTaskTest()
+        {
+            //Arrange
+
             //Act
-            mock.Object.Save(testTask);
+            _repository.Save(_testTask);
             //Assert
-            Assert.IsTrue(testTask.Id > 0);
+            Assert.IsTrue(_testTask.Id > 0);
+        }
+        [TestMethod]
+        public void UpdateTaskTest()
+        {
+            //Arrange
+            _repository.Save(_testTask);
+            int id = 1;
+
+            //Act
+            _testTask.TaskName = "changed";
+            _repository.Save(_testTask);
+            //Assert
+            Assert.IsTrue(_testTask.Id == id);
+            Assert.AreEqual("changed", _testTask.TaskName);
         }
         [TestMethod]
         public void GetByIdWithId_1Test()
         {
             //Arrange
-            string taskdetail = "new unit test task";
-            Task testTask = new Task
-            {
-                Id=1,
-                IsComlete = false,
-                TaskDetail = $"{taskdetail}4...",
-                TaskName = $"{taskdetail.Substring(0, 10)}..."
+            _repository.Save(_testTask);
 
-            };
-            var mock = new Mock<ITaskRepository>();
-            mock.Setup(x => x.GetById(1))
-            .Returns(testTask);
             //Act
-            var result=mock.Object.GetById(1);
+            var result = _repository.GetById(1);
             //Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(testTask.TaskName, result.TaskName);
+            Assert.AreEqual(_testTask.TaskName, result.TaskName);
         }
         [TestMethod]
         public void GetAllTest()
         {
             //Arrange
-            string taskdetail = "new unit test task";
-            Task testTask = new Task
-            {
-                Id = 1,
-                IsComlete = false,
-                TaskDetail = $"{taskdetail}4...",
-                TaskName = $"{taskdetail.Substring(0, 10)}..."
+            _repository.Save(_testTask);
 
-            };
-            var mock = new Mock<ITaskRepository>();
-            mock.Setup(x => x.GetAll())
-            .Returns(new List<Task>() { testTask });
             //Act
-            var result = mock.Object.GetAll();
+            var result = _repository.GetAll().ToList();
             //Assert
             Assert.IsTrue(result.Any());
         }
         [TestMethod]
-        public void DeleteTaskWithId_1()
+        public void DeleteTaskWithId_1Test()
         {
             //Arrange
-            string taskdetail = "new unit test task";
-            Task testTask = new Task
-            {
-                Id=1,
-                IsComlete = false,
-                TaskDetail = $"{taskdetail}4...",
-                TaskName = $"{taskdetail.Substring(0, 10)}..."
-
-            };
-            var mock = new Mock<ITaskRepository>();
-            mock.Setup(x => x.Delete(1))
-                .Callback(()=>testTask=null);
+            _repository.Save(_testTask);
             //Act
-            mock.Object.Delete(1);
+            _repository.Delete(1);
             //Assert
-            Assert.IsTrue(testTask is null);
+            Assert.IsTrue(_repository.GetById(1) is null);
         }
     }
 }

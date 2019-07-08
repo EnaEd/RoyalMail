@@ -1,26 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+﻿using System.Collections.Generic;
+using RoyalMail.Android.Services;
 using RoyalMail.Core.Interfaces;
 using RoyalMail.Core.Models;
 using SQLite;
 
-namespace RoyalMail.Android.Services
+namespace RoyalMail.Android.Repository
 {
-    public class TaskService : ITaskRepository
+    public class TaskRepository : ITaskRepository
     {
         private SQLiteConnection _connection;
-        public TaskService()
+        public TaskRepository(SQLiteConnectionService database)
         {
-            _connection = SQLiteConnectionService.Database;
+            _connection = database.Database;
         }
         public void Delete(int id)
         {
@@ -33,7 +24,8 @@ namespace RoyalMail.Android.Services
 
         public IEnumerable<Task> GetAll()
         {
-            return _connection.Table<Task>().ToList();
+            var t= _connection.Table<Task>().ToList();
+            return t;
         }
 
         public Task GetById(int id)
