@@ -22,9 +22,11 @@ namespace RoyalMail.Android.View
             base.OnCreate(bundle);
             CrossCurrentActivity.Current.Init(this, bundle);
             SetContentView(Resource.Layout.TaskListView);
+
             var listView = FindViewById<MvxRecyclerView>(Android.Resource.Id.list_item);
             _itemTouchHelper = new ItemTouchHelper(new Swipe2DismissTouchHelperService(this,ViewModel));
             _itemTouchHelper.AttachToRecyclerView(listView);
+
             _fab = FindViewById<Refractored.Fab.FloatingActionButton>(Resource.Id.fab);
             _fab.AttachToRecyclerView(listView);
 

@@ -2,26 +2,29 @@
 using MvvmCross.Commands;
 using RoyalMail.Core.Interfaces;
 using RoyalMail.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
 namespace RoyalMail.Core.ViewModels
 {
     public class TaskDetailViewModel : BaseTViewModel<Task>
     {
+        #region Variables
         private const int DEFAULT_LENGTH_TASK_NAME = 10;
         private const string TITLE = "Task Detail";
         private string _taskDetail;
         private bool _isComplete;
         private int _idTask;
         private ITaskRepository _taskService;
+        #endregion Variables
+
+        #region Constructors
         public TaskDetailViewModel()
         {
             _taskService = Mvx.IoCProvider.Resolve<ITaskRepository>();
         }
+        #endregion Constructors
 
+        #region Properties
         public string Title
         {
             get => TITLE;
@@ -60,11 +63,15 @@ namespace RoyalMail.Core.ViewModels
                 RaisePropertyChanged(nameof(IsComplete));
             }
         }
-        
+        #endregion Properties
+
+        #region Commands
         private MvxCommand _saveTaskCommand;
         public ICommand SaveTaskCommand => new MvxCommand(SaveTask);
         public ICommand GoBackCommand => new MvxCommand(GoBack);
+        #endregion Commands
 
+        #region Methods
         private void GoBack()
         {
             _navigationService.Close(this);
@@ -87,7 +94,9 @@ namespace RoyalMail.Core.ViewModels
             _taskService.Save(task);
             _navigationService.Close(this);
         }
+        #endregion Methods
 
+        #region Ovverride
         public override void Prepare(Task parameter)
         {
             if (parameter is null)
@@ -99,5 +108,6 @@ namespace RoyalMail.Core.ViewModels
             IsComplete = parameter.IsComlete;
             _idTask = parameter.Id;
         }
+        #endregion Ovverride
     }
 }

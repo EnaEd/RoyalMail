@@ -1,9 +1,7 @@
 ﻿using MvvmCross;
 using MvvmCross.Commands;
-using MvvmCross.ViewModels;
 using RoyalMail.Core.Interfaces;
 using RoyalMail.Core.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
@@ -12,18 +10,24 @@ namespace RoyalMail.Core.ViewModels
 {
     public class TaskListViewModel : BaseViewModel
     {
+        #region Variables
         private const string TITLE = "Task Detail";
         private string _taskName;
         private string _taskDetail;
         private bool _isComplite;
         private ITaskRepository _taskService;
         private List<Task> _tasks;
+        #endregion Variables
+
+        #region Constructors
         public TaskListViewModel() : base()
         {
             _taskService = Mvx.IoCProvider.Resolve<ITaskRepository>();
             InitData();
         }
+        #endregion Constructors
 
+        #region Properties
         public string Title
         {
             get => TITLE;
@@ -37,7 +41,6 @@ namespace RoyalMail.Core.ViewModels
                 RaisePropertyChanged(nameof(TaskName));
             }
         }
-
         public string TaskDetailCard
         {
             get => _taskName;
@@ -47,7 +50,6 @@ namespace RoyalMail.Core.ViewModels
                 RaisePropertyChanged(nameof(TaskName));
             }
         }
-
         public string TaskDetail
         {
             get => _taskDetail;
@@ -75,19 +77,17 @@ namespace RoyalMail.Core.ViewModels
                 RaisePropertyChanged(nameof(Tasks));
             }
         }
+        #endregion Properties
 
+        #region Commands
         public ICommand ShoTaskDetailCommand => new MvxCommand<Task>(ShowtaskDetail);
 
         public ICommand EditTaskCommand => new MvxCommand<Task>(EditTask);
 
         public ICommand CreateTaskCommand => new MvxCommand(CreateTask);
+        #endregion Commands
 
-
-        public override void ViewAppearing()
-        {
-            InitData();
-        }
-
+        #region Methods
         private void InitData()
         {
             Tasks = _taskService.GetAll().Where(x => x.IsComlete == default(bool)).ToList();
@@ -96,7 +96,6 @@ namespace RoyalMail.Core.ViewModels
         {
             _navigationService.Navigate<TaskDetailViewModel, Task>(null);
         }
-
         public void CompleteTask(Task task)
         {
             task.IsComlete = true;
@@ -111,5 +110,13 @@ namespace RoyalMail.Core.ViewModels
         {
             InvokeOnMainThread(() => { _messageService.ShowMessage($"{obj.TaskDetail}"); });
         }
+        #endregion Methods
+
+        #region Ovverride
+        public override void ViewAppearing()
+        {
+            InitData();
+        }
+        #endregion Ovverride
     }
 }

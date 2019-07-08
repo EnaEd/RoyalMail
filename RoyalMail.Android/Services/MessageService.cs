@@ -2,7 +2,6 @@
 using Android.App;
 using Android.Widget;
 using Plugin.CurrentActivity;
-using RoyalMail.Android.View;
 using RoyalMail.Core.Interfaces;
 
 namespace RoyalMail.Android.Services

@@ -16,9 +16,6 @@ namespace RoyalMail.Tests
         private Task _testTask;
         public RoyalMailCoreTests()
         {
-            _connection = new SQLiteConnection(":memory:");
-            _repository = new TaskRepository(new SQLiteConnectionService(_connection));
-
             string taskdetail = "new unit test task";
             _testTask = new Task
             {
@@ -26,12 +23,21 @@ namespace RoyalMail.Tests
                 TaskDetail = $"{taskdetail}4...",
                 TaskName = $"{taskdetail.Substring(0, 10)}..."
             };
+
+            _connection = new SQLiteConnection(":memory:");
+            _repository = new TaskRepository(new SQLiteConnectionService(_connection));
+            _connection.Insert(_testTask);
         }
         [TestMethod]
         public void CreateTaskTest()
         {
             //Arrange
-
+            _testTask = new Task
+            {
+                IsComlete = false,
+                TaskDetail = "new test task",
+                TaskName = "new test task"
+            };
             //Act
             _repository.Save(_testTask);
             //Assert
@@ -41,34 +47,33 @@ namespace RoyalMail.Tests
         public void UpdateTaskTest()
         {
             //Arrange
-            _repository.Save(_testTask);
-            int id = 1;
-
+            string newTaskName = "changed";
             //Act
-            _testTask.TaskName = "changed";
-            _repository.Save(_testTask);
+            _testTask = _repository.GetById(_testTask.Id);
+            Task changedTask = new Task
+            {
+                Id = _testTask.Id,
+                TaskName = newTaskName,
+                TaskDetail = _testTask.TaskDetail,
+                IsComlete = _testTask.IsComlete
+            };
+            _repository.Save(changedTask);
+            string result = _repository.GetById(_testTask.Id).TaskName;
             //Assert
-            Assert.IsTrue(_testTask.Id == id);
-            Assert.AreEqual("changed", _testTask.TaskName);
+            Assert.AreEqual(newTaskName, result);
         }
         [TestMethod]
         public void GetByIdWithId_1Test()
         {
-            //Arrange
-            _repository.Save(_testTask);
-
             //Act
-            var result = _repository.GetById(1);
+            var result = _repository.GetById(_testTask.Id);
             //Assert
             Assert.IsNotNull(result);
             Assert.AreEqual(_testTask.TaskName, result.TaskName);
         }
         [TestMethod]
-        public void GetAllTest()
+        public void GetAnyTest()
         {
-            //Arrange
-            _repository.Save(_testTask);
-
             //Act
             var result = _repository.GetAll().ToList();
             //Assert
@@ -77,12 +82,10 @@ namespace RoyalMail.Tests
         [TestMethod]
         public void DeleteTaskWithId_1Test()
         {
-            //Arrange
-            _repository.Save(_testTask);
             //Act
-            _repository.Delete(1);
+            _repository.Delete(_testTask.Id);
             //Assert
-            Assert.IsTrue(_repository.GetById(1) is null);
+            Assert.IsTrue(_repository.GetById(_testTask.Id) is null);
         }
     }
 }

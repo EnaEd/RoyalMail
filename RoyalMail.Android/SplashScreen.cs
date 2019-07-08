@@ -1,12 +1,6 @@
 ﻿using Android.App;
 using Android.Content.PM;
-using Android.OS;
-using MvvmCross;
-using MvvmCross.Platforms.Android.Core;
 using MvvmCross.Platforms.Android.Views;
-using RoyalMail.Android.Services;
-using RoyalMail.Core;
-using RoyalMail.Core.Interfaces;
 
 namespace RoyalMail.Android
 {
