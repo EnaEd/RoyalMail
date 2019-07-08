@@ -41,6 +41,16 @@
                 android:layout_marginLeft="5dp"
                 android:layout_centerVertical="true"
                 android:textColor="@android:color/white"/>
+             <Button
+            android:id="@+id/buttonSaveTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/defaultbutton"
+            local:MvxBind="Click SaveTaskCommand"/>
         </RelativeLayout>
         
         <EditText
@@ -54,28 +64,11 @@
             android:maxHeight="100dp"
             android:gravity="top|left"
             android:maxLength="280"
+            android:imeOptions="actionDone"
             android:layout_below="@id/headerInputTask"
             android:layout_margin="5dp"
             local:MvxBind="Text TaskDetail"/>
-        <Button
-            android:id="@+id/buttonSaveTask"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="save"
-            android:textColor="@android:color/white"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/inputTask"
-            android:background="@drawable/defaultbutton"
-            local:MvxBind="Click SaveTaskCommand"/>
+
     </RelativeLayout>
 </LinearLayout>
-<!--<EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your task here..."
-        local:MvxBind="Text TaskDetail"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="save"
-        local:MvxBind="Click SaveTaskCommand"/>-->
+
