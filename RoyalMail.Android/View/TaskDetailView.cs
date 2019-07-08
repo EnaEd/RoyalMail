@@ -1,5 +1,6 @@
 ﻿
 using Android.App;
+using Android.Content.PM;
 using Android.OS;
 using Android.Widget;
 using MvvmCross.Platforms.Android.Presenters.Attributes;
@@ -8,7 +9,7 @@ using MvvmCross.Platforms.Android.Views;
 namespace RoyalMail.Android.View
 {
     [MvxActivityPresentation]
-    [Activity(Label = "View for TaskDetailViewModel")]
+    [Activity(Label = "View for TaskDetailViewModel", ScreenOrientation = ScreenOrientation.Portrait)]
     public class TaskDetailView : MvxActivity
     {
         private EditText _editText;

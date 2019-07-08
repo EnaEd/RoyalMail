@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content.PM;
 using Android.OS;
 using Android.Support.V7.Widget.Helper;
 using MvvmCross.Droid.Support.V7.RecyclerView;
@@ -11,7 +12,7 @@ using RoyalMail.Core.ViewModels;
 namespace RoyalMail.Android.View
 {
     [MvxActivityPresentation]
-    [Activity(Label = "View for TaskListViewModel")]
+    [Activity(Label = "View for TaskListViewModel", ScreenOrientation =ScreenOrientation.Portrait)]
     public class TaskListView : MvxActivity<TaskListViewModel>
     {
         private Refractored.Fab.FloatingActionButton _fab;
