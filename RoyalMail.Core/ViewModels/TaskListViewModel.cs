@@ -77,6 +77,7 @@ namespace RoyalMail.Core.ViewModels
                 RaisePropertyChanged(nameof(Tasks));
             }
         }
+        public bool IsClick { get; set; }
         #endregion Properties
 
         #region Commands
@@ -91,10 +92,15 @@ namespace RoyalMail.Core.ViewModels
         private void InitData()
         {
             Tasks = _taskService.GetAll().Where(x => x.IsComlete == default(bool)).ToList();
+            IsClick = false;
         }
         public void CreateTask()
         {
-            _navigationService.Navigate<TaskDetailViewModel, Task>(null);
+            if (!IsClick)
+            {
+                _navigationService.Navigate<TaskDetailViewModel, Task>(null);
+                IsClick = !IsClick;
+            }
         }
         public void CompleteTask(Task task)
         {
