@@ -24,5 +24,10 @@ namespace RoyalMail.Android.Services
             });
             alertDialog.Show();
         }
+
+        public void ShowMessageAlet(string message)
+        {
+            Toast.MakeText(Application.Context, $"{message}", ToastLength.Long).Show();
+        }
     }
 }

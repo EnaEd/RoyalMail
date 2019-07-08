@@ -10,6 +10,8 @@ namespace RoyalMail.Core.ViewModels
     {
         #region Variables
         private const int DEFAULT_LENGTH_TASK_NAME = 10;
+        private const int DEFAULT_LENGTH_TASK_DETAIL = 210;
+        private const string DEFAULT_ALERT_MAX_LENGTH = "task max length";
         private const string TITLE = "Task Detail";
         private string _taskDetail;
         private bool _isComplete;
@@ -50,6 +52,10 @@ namespace RoyalMail.Core.ViewModels
             set
             {
                 _taskDetail = value;
+                if (_taskDetail.Length>= DEFAULT_LENGTH_TASK_DETAIL)
+                {
+                    _messageService.ShowMessageAlet(DEFAULT_ALERT_MAX_LENGTH);
+                }
                 RaisePropertyChanged(nameof(TaskName));
                 RaisePropertyChanged(nameof(TaskDetail));
             }

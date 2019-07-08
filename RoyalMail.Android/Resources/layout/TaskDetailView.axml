@@ -41,33 +41,40 @@
                 android:layout_marginLeft="5dp"
                 android:layout_centerVertical="true"
                 android:textColor="@android:color/white"/>
-             <Button
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerInputTask"
+            android:textSize="16dp"
+            android:layout_margin="10dp"
+            local:MvxBind="Text TaskDetail"/>
+        <EditText
+            android:id="@+id/inputTask"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="100dp"
+            android:gravity="bottom|left"
+            android:maxLength="210"
+            android:imeOptions="actionDone"
+            android:layout_below="@id/headerInputTask"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/buttonSaveTask"
+            android:layout_margin="5dp"
+            local:MvxBind="Text TaskDetail"/>
+          <Button
             android:id="@+id/buttonSaveTask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="save"
             android:textColor="@android:color/white"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
             android:background="@drawable/defaultbutton"
             local:MvxBind="Click SaveTaskCommand"/>
-        </RelativeLayout>
-        
-        <EditText
-            android:id="@+id/inputTask"
-            android:inputType="textMultiLine"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minLines="8" 
-            android:lines="8"
-            android:maxLines="8"
-            android:maxHeight="100dp"
-            android:gravity="top|left"
-            android:maxLength="280"
-            android:imeOptions="actionDone"
-            android:layout_below="@id/headerInputTask"
-            android:layout_margin="5dp"
-            local:MvxBind="Text TaskDetail"/>
 
     </RelativeLayout>
 </LinearLayout>

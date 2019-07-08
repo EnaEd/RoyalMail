@@ -8806,8 +8806,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a0074
 			public const int buttonPanel = 2131361908;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int buttonSaveTask = 2131361983;
+			// aapt resource value: 0x7f0a00c0
+			public const int buttonSaveTask = 2131361984;
 			
 			// aapt resource value: 0x7f0a004e
 			public const int center = 2131361870;
@@ -8950,8 +8950,8 @@ namespace RoyalMail.Android
 			// aapt resource value: 0x7f0a00b6
 			public const int info = 2131361974;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int inputTask = 2131361984;
+			// aapt resource value: 0x7f0a00bf
+			public const int inputTask = 2131361983;
 			
 			// aapt resource value: 0x7f0a006a
 			public const int italic = 2131361898;

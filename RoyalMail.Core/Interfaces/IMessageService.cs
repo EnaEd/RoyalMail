@@ -6,5 +6,6 @@ namespace RoyalMail.Core.Interfaces
     {
         void Alert(Exception ex);
         void ShowMessage(string message);
+        void ShowMessageAlet(string message);
     }
 }
